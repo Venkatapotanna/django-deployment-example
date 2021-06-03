@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Relative URL Templates</h1>
+    <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>    <!-- This will link to all the other views we given in urls.py file in app folder -->
+    <a href="{% url 'admin:index' %}">LINK TO ADMIN</a>         <!-- This will link to Admin Page -->
+    <a href="{% url 'index' %}">LINK TO INDEX</a>               <!-- This will link to index page we defined in views.py file in project folder -->
+
+  </body>
+</html>

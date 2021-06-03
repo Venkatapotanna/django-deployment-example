@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load my_extras %}                       <!-- This line will load our custom template filter -->
+  {% block body_block %}
+
+    <h1>Welcome to Index</h1>
+
+    <!-- <h1>This is index.html page</h1> -->
+
+    <h1>{{ text|upper }}</h1>              <!-- This is an in-built template filter and we have tonnes to inbuilt filters available in documentation  -->
+    <h2>{{ number|add:'99' }}</h2>         <!-- This is an in-built template filter and we have tonnes to inbuilt filters available in documentation  -->
+    <h1>{{ text|nikhil:'hello' }}</h1>     <!-- This is a our own/custom filter and refer to 'templatetags/myextras.py' file for that under basic_app folder  -->
+
+
+  {% endblock %}
